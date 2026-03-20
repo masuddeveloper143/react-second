@@ -8,7 +8,10 @@ function App() {
 
   return (
     <>
-      <h1>react second</h1>
+      <h1>vite+react</h1>
+      {/* <button onClick="handleClick()">lick me</button> */}
+      <button>click me</button>
+
     </>
   )
 }
