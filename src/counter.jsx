@@ -1,9 +1,9 @@
 
-
+import { useState } from "react"
 
 export default function Counter() {
     const counterStyle = {
-        border: '2px solid'
+        border: '2px solid red'
     }
     return (
         <div style={counterStyle}>
