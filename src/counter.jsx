@@ -4,7 +4,8 @@ import { useState } from "react"
 export default function Counter() {
 
     const handleAdd = () => {
-        setCount(5);
+    const newCount = count + 1;
+    setCount(newCount);
     }
 
     const [count, setCount] = useState(0);

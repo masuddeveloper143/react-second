@@ -20,7 +20,25 @@ function App() {
   }
 
   return (
+
+
     <>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <h1>vite+react</h1>
       {/* <button onClick="handleClick()">lick me</button> */}
       <Counter></Counter>
