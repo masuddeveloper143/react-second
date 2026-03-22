@@ -1,6 +1,7 @@
 
 import Counter from './counter';
 import './App.css'
+import Batsman from './batsman';
 
 function App() {
 
@@ -38,10 +39,11 @@ function App() {
 
 
 
-
+    
       <h1>vite+react</h1>
       {/* <button onClick="handleClick()">lick me</button> */}
       <Counter></Counter>
+      <Batsman></Batsman>
 
       <button  onClick={handleClick}>click me</button>
 
