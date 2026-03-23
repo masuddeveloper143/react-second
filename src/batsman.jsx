@@ -20,9 +20,7 @@ export default function Batsman() {
     }
 
 
-    {
-        
-    }
+
 
 
     return (
@@ -30,7 +28,9 @@ export default function Batsman() {
             <h1>Plear: Bangla Batsman</h1>
 
 
-
+            {
+                runs > 50 && <p>your scroe: 50</p>
+            }
 
             <h1>Score: {runs}</h1>
             <button onClick={handleSingeles}> sigeles</button>
