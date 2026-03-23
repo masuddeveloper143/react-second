@@ -1,7 +1,9 @@
 import { useState } from "react"
 
 export default function Batsman() {
-    let [runs, setRuns] = useState(0);
+    const [runs, setRuns] = useState(0);
+    const [sixes, setSixes] = useState(0);
+
 
 
     const handleSingeles = () => {
@@ -11,6 +13,8 @@ export default function Batsman() {
 
     const handleSIx = () => {
         const updatedRuns = runs + 6;
+        const updatedSixs = sixes + 1;
+        setSixes(updatedSixs);
         setRuns(updatedRuns);
     }
 
@@ -26,6 +30,7 @@ export default function Batsman() {
     return (
         <div>
             <h1>Plear: Bangla Batsman</h1>
+            <p><small>Six: {sixes} </small></p>
 
 
             {
