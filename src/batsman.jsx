@@ -20,11 +20,18 @@ export default function Batsman() {
     }
 
 
+    {
+        
+    }
 
 
     return (
         <div>
             <h1>Plear: Bangla Batsman</h1>
+
+
+
+
             <h1>Score: {runs}</h1>
             <button onClick={handleSingeles}> sigeles</button>
             <button onClick={handleFour}> four</button>
