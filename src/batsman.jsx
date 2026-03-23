@@ -3,11 +3,14 @@ import { useState } from "react"
 export default function Batsman() {
     const [runs, setRuns] = useState(0);
     const [sixes, setSixes] = useState(0);
-
+    const [fourCount, setFour] = useState(0);
+    const [singelsCount, setSingels] = useState(0);
 
 
     const handleSingeles = () => {
         const updatedRuns = runs + 1;
+        const updatedSingels = singelsCount + 1;
+        setSingels(updatedSingels);
         setRuns(updatedRuns);
     }
 
@@ -20,6 +23,8 @@ export default function Batsman() {
 
     const handleFour = () => {
         const updatedRuns = runs + 6;
+        const updatedFour = fourCount + 1;
+        setFour(updatedFour)
         setRuns(updatedRuns);
     }
 
@@ -31,6 +36,8 @@ export default function Batsman() {
         <div>
             <h1>Plear: Bangla Batsman</h1>
             <p><small>Six: {sixes} </small></p>
+            <p><small>Four: {fourCount} </small></p>
+            <p><small>Singels: {singelsCount} </small></p>
 
 
             {
