@@ -11,12 +11,13 @@ import { Suspense } from 'react';
 
 const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
   .then(res => res.json());
-return res.json();
+
 
 
 
 const fetchFriends = async () => {
   const res = await fetchK("https://jsonplaceholder.typicode.com/users")
+  return res.json();
 }
 
 
@@ -78,7 +79,7 @@ function App() {
 
 
       <Suspense fallback={<h3>friends are comming for treat...</h3>}>
-        <Friends></Friends>
+        <Friends friendsPromise={friendsPromise} ></Friends>
       </Suspense>
 
       <button onClick={handleClick}>click me</button>

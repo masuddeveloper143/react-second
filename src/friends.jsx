@@ -1,4 +1,8 @@
-export default function Friends() {
+import { use } from "react";
+
+export default function Friends({ friendsPromise }) {
+
+    const friends = use(friendsPromise);
 
     const users = use(fetchUsers);
 
