@@ -56,9 +56,18 @@ function App() {
       <Counter></Counter>
       <Batsman></Batsman>
 
+
+
       <Suspense fallback={<h3>loding...</h3>}>
 
         <Users fetchUsers={fetchUsers}></Users>
+
+      </Suspense>
+
+
+
+
+      <Suspense fallback={<h3>friends are comming for treat...</h3>}>
 
       </Suspense>
 

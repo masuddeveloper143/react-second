@@ -7,7 +7,7 @@ export default function Users({ fetchUsers }) {
 
     return (
         <div>
-            <h3>User: {users.lenght} </h3>
+            <h3>User: {users.length } </h3>
         </div>
     )
 
