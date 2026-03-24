@@ -6,7 +6,7 @@ export default function Friends({ friendsPromise }) {
     console.log(friends);
 
     const users = use(fetchUsers);
-    
+
 
     return (
         <div>
