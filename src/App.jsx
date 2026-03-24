@@ -24,6 +24,7 @@ const fetchFriends = async () => {
 
 function App() {
 
+  const friendsPromise = fetchFriends();
 
   function handleClick() {
     alert("I am cliked");
