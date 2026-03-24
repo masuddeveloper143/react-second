@@ -2,6 +2,7 @@
 import Counter from './counter';
 import './App.css'
 import Batsman from './batsman';
+import Users from './user';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
       {/* <button onClick="handleClick()">lick me</button> */}
       <Counter></Counter>
       <Batsman></Batsman>
+      <Users></Users>
 
       <button  onClick={handleClick}>click me</button>
 
