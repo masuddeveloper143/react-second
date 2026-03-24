@@ -1,6 +1,7 @@
 import Batsman from './batsman';
 import Users from './user';
 import Counter from './counter';
+import Friends from './friends';
 import './App.css'
 import { Suspense } from 'react';
 
