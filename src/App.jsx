@@ -16,7 +16,7 @@ const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
 
 
 const fetchFriends = async () => {
-  const res = await fetchK("https://jsonplaceholder.typicode.com/users")
+  const res = await fetch("https://jsonplaceholder.typicode.com/users")
   return res.json();
 }
 
