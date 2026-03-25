@@ -8,10 +8,10 @@ export default function Friends({ friendsPromise }) {
 
 
     return (
-        <div>
+        <div className="crad">
             <h3>Friends:  {Friends.length} </h3>
             {
-                Friends.map(friend => <friend></friend>)
+                Friends.map(friend => <Friend friend={friend}></Friend>)
             }
         </div>
     )
