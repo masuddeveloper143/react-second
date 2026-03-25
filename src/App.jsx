@@ -9,16 +9,16 @@ import { Suspense } from 'react';
 
 
 
-const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
-  .then(res => res.json());
+// const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
+//   .then(res => res.json());
 
 
 
 
-const fetchFriends = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users")
-  return res.json();
-}
+// const fetchFriends = async () => {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/users")
+//   return res.json();
+// }
 
 
 
