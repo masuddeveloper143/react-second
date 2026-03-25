@@ -11,7 +11,7 @@ export default function Friends({ friendsPromise }) {
         <div className="crad">
             <h3>Friends:  {Friends.length} </h3>
             {
-                Friends.map(friend => <Friend friend={friend}></Friend>)
+                Friends.map(friend => <Friend key={friend.id} friend={friend}></Friend>)
             }
         </div>
     )
