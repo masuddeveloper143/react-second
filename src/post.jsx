@@ -1,6 +1,6 @@
 export default function Posts() {
     return(
-        <div>
+        <div className="crad">
             <h2>all post are here</h2>
         </div>
     )

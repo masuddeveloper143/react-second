@@ -4,21 +4,27 @@ import Counter from './counter';
 import Friends from './friends';
 import './App.css'
 import { Suspense } from 'react';
+import Posts from './post';
 
 
 
 
 
-// const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
-//   .then(res => res.json());
+const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
+  .then(res => res.json());
 
 
 
 
-// const fetchFriends = async () => {
-//   const res = await fetch("https://jsonplaceholder.typicode.com/users")
-//   return res.json();
-// }
+const fetchFriends = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users")
+  return res.json();
+}
+
+
+const fetchPost = async () => {
+  const res = await fetchFriends('https://jsonplaceholder.typicode.com/posts')
+}
 
 
 
@@ -46,26 +52,15 @@ function App() {
 
     <>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <h1>vite+react</h1>
+
+      <Suspense fallback={<h3>Post are comming..</h3>}> </Suspense>
+      <Posts></Posts>
 
       {/* <button onClick="handleClick()">lick me</button> */}
       <Counter></Counter>
       <Batsman></Batsman>
+
 
 
 
