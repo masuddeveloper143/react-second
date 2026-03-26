@@ -24,7 +24,7 @@ const fetchFriends = async () => {
 
 const fetchPost = async () => {
   const res = await fetchFriends('https://jsonplaceholder.typicode.com/posts')
-  return res.json()
+  return res.json();
 }
 
 
@@ -34,7 +34,7 @@ function App() {
 
   const friendsPromise = fetchFriends();
 
-  const posrPromise = fetchPost();
+  const postPromise = fetchPost();
 
   function handleClick() {
     alert("I am cliked");
@@ -58,7 +58,7 @@ function App() {
       <h1>vite+react</h1>
 
       <Suspense fallback={<h3>Post are comming..</h3>}> </Suspense>
-      <Posts posrPromise={posrPromise}></Posts>
+      <Posts posrPromise={postPromise}></Posts>
 
       {/* <button onClick="handleClick()">lick me</button> */}
       <Counter></Counter>
