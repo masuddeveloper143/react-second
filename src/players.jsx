@@ -6,14 +6,21 @@ export default function Players() {
     useEffect(() => {
 
         fetch('https://jsonplaceholder.typicode.com/users')
-        .then(res => res.json())
-        .then(data => setPlayers(data))
+            .then(res => res.json())
+            .then(data => setPlayers(data))
 
     }, [])
 
+
+
     return (
         <div className="crad">
-            <h4>Players: {players.length} </h4>
+            <h4>Players: {players.length}</h4>
+            <ol>
+                {
+                    players.map(player => <li>{player.name}</li>)
+                }
+            </ol>
         </div>
     )
 }
