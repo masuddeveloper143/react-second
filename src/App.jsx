@@ -5,6 +5,7 @@ import Friends from './friends';
 import './App.css'
 import { Suspense } from 'react';
 import Posts from './post';
+import Players from './players';
 
 
 
@@ -56,6 +57,7 @@ function App() {
     <>
 
       <h1>vite+react</h1>
+      <Players></Players>
 
       <Suspense fallback={<h3>Post are comming....</h3>}>
         <Posts postPromise={postPromise}></Posts>
