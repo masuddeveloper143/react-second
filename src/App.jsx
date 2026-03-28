@@ -6,6 +6,7 @@ import './App.css'
 import { Suspense } from 'react';
 import Posts from './post';
 import Players from './players';
+import Counter2 from './counter2';
 
 
 
@@ -57,16 +58,19 @@ function App() {
     <>
 
       <h1>vite+react</h1>
+       <Counter></Counter>
+      <Counter2></Counter2>
       <Players></Players>
+
 
       <Suspense fallback={<h3>Post are comming....</h3>}>
         <Posts postPromise={postPromise}></Posts>
       </Suspense>
 
       {/* <button onClick="handleClick()">lick me</button> */}
-      <Counter></Counter>
+     
       <Batsman></Batsman>
-      
+
 
 
 

@@ -11,11 +11,9 @@ export default function Counter() {
 
     const [count, setCount] = useState(0);
 
-    const counterStyle = {
-        border: '2px solid red'
-    }
+    
     return (
-        <div style={counterStyle}>
+        <div className="crad">
             <h3>count: {count} </h3>
             <button onClick={handleAdd}>Add</button>
 
