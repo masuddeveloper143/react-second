@@ -1,15 +1,18 @@
 import { use } from "react"
-import post from "./posts";
+import Post from "./posts";
 
 export default function Posts({ postPromise }) {
 
-    const posts = use(postPromise)
-    console.log(posts);
+    const posts = use(postPromise);
+
     return (
-        <div className="crad">
-            <h2>all post are here: {posts.length} </h2>
+        <div className="card">
+            <h2>all post are here: {posts.length}</h2>
+
             {
-                post.map(posts => <posts posts={posts}></posts>)
+                posts.map(post => (
+                    <Post key={post.id} post={post}></Post>
+                ))
             }
 
         </div>
