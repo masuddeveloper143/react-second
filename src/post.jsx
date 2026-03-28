@@ -6,7 +6,7 @@ export default function Posts({ postPromise }) {
     console.log(posts);
     return (
         <div className="crad">
-            <h2>all post are here </h2>
+            <h2>all post are here: {posts.length} </h2>
         </div>
     )
 }
