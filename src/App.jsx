@@ -8,7 +8,7 @@ import Posts from './post';
 import Players from './players';
 import Counter2 from './counter2';
 import Counter3 from './countrest';
-
+import Countmain from './countmain';
 
 
 
@@ -60,6 +60,7 @@ function App() {
     <>
 
       <h1>vite+react</h1>
+      <Countmain></Countmain>
        <Counter></Counter>
       <Counter2></Counter2>
       <Counter3></Counter3>
