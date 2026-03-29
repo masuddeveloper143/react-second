@@ -4,8 +4,8 @@ export default function Counter3() {
 
 
     const handleDownRest = () => {
-        const newCountDown = count - 1;
-        setCount(newCountDown);
+    
+        setCount(0);
     }
 
     const [count, setCount] = useState(100);
